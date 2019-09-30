@@ -1,0 +1,27 @@
+{
+  "name": "awesomev3",
+  "version": "1.0.0",
+  "description": "version three",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreybonajos/awesomev3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreybonajos/awesomev3/issues"
+  },
+  "homepage": "https://github.com/jeffreybonajos/awesomev3#readme",
+  "dependencies": {
+    "next": "^9.0.7",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  }
+}
