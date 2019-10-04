@@ -4,10 +4,10 @@
   "description": "version three",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "now-build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/jeffreybonajos/awesomev3#readme",
   "dependencies": {
-    "next": "^9.0.7",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "express": "^4.14.0",
+    "next": "^8.0.0",
+    "nodemon": "^1.18.10",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }
