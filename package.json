@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jeffreybonajos/awesomev3#readme",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.16.4",
     "next": "^8.0.0",
     "nodemon": "^1.18.10",
     "react": "^16.7.0",
