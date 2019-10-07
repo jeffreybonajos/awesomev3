@@ -9,10 +9,6 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get("/index", (req, res) => {
-    return app.render(req, res, "/index");
-  });
-
   server.get("*", (req, res) => {
     return handle(req, res);
   });
