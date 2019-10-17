@@ -3,17 +3,16 @@ const jwt = require('jsonwebtoken')
 
 const auth = async (req, res, next) => {
     try {
-        let token = req.headers['x-access-token'] || req.headers['authorization']; // Express headers are auto converted to lowercase
-        if (token.startsWith('Bearer ')) {
-            // Remove Bearer from string
-            token = token.slice(7, token.length);
-        }
+        const token = req.body.token || req.query.token || req.header('Authorization').replace('Bearer', '') 
         const decoded = jwt.verify(token, 'awesomeversionthree')
         const user = await userModel.getUserProfile(decoded.user_id)
+
         if(!user) {
             throw new Error ('error auth')
         }
-        res.send({user, token})
+        req.token = token
+        req.user = user
+        res.json({user, token})
     } catch(e) {
         res.status(403).send(e)
     }

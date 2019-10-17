@@ -2,6 +2,7 @@ const express = require("express");
 const next = require("next");
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser');
+const cors = require('cors')
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== "production";
@@ -21,6 +22,7 @@ app.prepare().then(() => {
   //     next()
   //   }
   // })
+  server.use(cors())
   server.use(cookieParser());
   server.use(bodyParser.json())
   server.get('/', (req, res) => {
