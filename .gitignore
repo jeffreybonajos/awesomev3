@@ -1,7 +1,8 @@
 
 
 .next
-
+.build
+iisnode
 
 node_modules
 
