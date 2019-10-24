@@ -1,17 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import Layout from '../components/Layout';
 
-export default () => (
-  <ul>
-    <li>
-      <Link href='/b' as='/a'>
-        <a>a</a>
-      </Link>
-    </li>
-    <li>
-      <Link href='/a' as='/b'>
-        <a>b</a>
-      </Link>
-    </li>
-  </ul>
-)
+const indexPageContent = <p>Hello Next.js</p>;
+
+export default function Index() {
+  return <Layout content={indexPageContent} />;
+}
