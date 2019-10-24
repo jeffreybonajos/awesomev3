@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const next = require("next");
 const cookieParser = require('cookie-parser')
@@ -40,3 +41,5 @@ app.prepare().then(() => {
 
 });
   
+=======
+>>>>>>> update102419

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
@@ -36,3 +37,21 @@ export default ({ children }) => (
     </Aux>
   </div>
 );
+=======
+import Header from './Header';
+
+const layoutStyle = {
+    margin: 20,
+    padding: 20,
+    border: '1px solid #DDD'
+  };
+  
+  const Layout = props => (
+    <div style={layoutStyle}>
+      <Header />
+      {props.content}
+    </div>
+  );
+  
+  export default Layout;
+>>>>>>> update102419

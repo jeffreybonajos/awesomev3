@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "next build",
+<<<<<<< HEAD
     "now-build": "next build",
     "start": "NODE_ENV=production node server.js"
+=======
+    "start": "next start"
+>>>>>>> update102419
   },
   "repository": {
     "type": "git",
